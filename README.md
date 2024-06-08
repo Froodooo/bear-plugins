@@ -6,12 +6,12 @@ This repository hosts a collection of plugins designed to extend and enhance the
 
 To install a plugin on your Bear blog, follow these steps:
 
-1. **Find a plugin you like.**
+1. Find a plugin you like.
    See [Available plugins](#available-plugins) section below.
    
-3. **Copy the `<script>` tag for that plugin and paste it into the footer directive (only available for Bear subscribers)**:
+3. Copy the `<script>` tag for that plugin and paste it into the footer directive (only available for Bear subscribers).
 
-4. **You're done!**:
+4. You're done!
 
 ## Available plugins
 
