@@ -6,5 +6,6 @@ fetch('https://froodooo.pythonanywhere.com/last-played', {
   })
   .then(res => res.json())
   .then((track) => {
+    console.log(track);
     document.querySelector('#last-played').innerHTML=`My last played song is ${track.title} by ${track.artist} (checked using <a href='https://www.last.fm/user/Froodooo' target='_blank'>Last.fm</a>).`;
   });
