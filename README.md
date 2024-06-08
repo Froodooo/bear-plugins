@@ -15,10 +15,10 @@ To install a plugin on your Bear blog, follow these steps:
 
 ## Available plugins
 
-### Blog search
+### 1. Blog search
 Adds search capabilities to your `/blog/` page.
 
-#### Script
+**Script** *(add the following line to the footer directive of your Bear blog)*:
 ```html
 <script src="https://cdn.jsdelivr.net/gh/froodooo/bear-plugins@main/blog-search.js"></script>
 ```
