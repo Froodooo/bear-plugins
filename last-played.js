@@ -1,9 +1,5 @@
 // This plugin only works for myself at this moment.
-fetch('https://froodooo.pythonanywhere.com/last-played', {
-    headers: {
-      'Accept': 'application/json'
-    }
-  })
+fetch('https://froodooo.pythonanywhere.com/last-played')
   .then(res => res.json())
   .then((track) => {
     console.log(track);
