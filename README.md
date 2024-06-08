@@ -23,6 +23,8 @@ Adds search capabilities to your `/blog/` page.
 <script src="https://cdn.jsdelivr.net/gh/froodooo/bear-plugins@main/blog-search.js"></script>
 ```
 
+Code credits for this one go to [Herman](https://github.com/HermanMartinus).
+
 ## License
 
 This repository is licensed under the [WTFPL](http://www.wtfpl.net/) License.
