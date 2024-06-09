@@ -1,6 +1,6 @@
 # example netlify.toml
 [build]
-  command = "# no build command"
+  command = "sed -i \"s|HEADER_PLACEHOLDER|${HEADER_CORS}|g\" netlify.toml && yarn build"
   functions = "netlify/functions"
   publish = "public"
 
@@ -22,3 +22,9 @@
 
 [functions]
   node_bundler = "esbuild"
+
+[[headers]]
+  # Define which paths this specific [[headers]] block will cover.
+  for = "/*"
+    [headers.values]
+    Access-Control-Allow-Origin = "HEADER_PLACEHOLDER"
