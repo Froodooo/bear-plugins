@@ -1,6 +1,6 @@
 # example netlify.toml
 [build]
-  command = "sed -i \"s|HEADER_PLACEHOLDER|${HEADER_CORS}|g\" netlify.toml && yarn build"
+  command = "sed -i \"s|${HEADER_CORS}|${HEADER_CORS}|g\" netlify.toml"
   functions = "netlify/functions"
   publish = "public"
 
