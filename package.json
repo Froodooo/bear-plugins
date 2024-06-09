@@ -1,0 +1,15 @@
+{
+  "name": "bear-plugins",
+  "version": "1.0.0",
+  "description": "This repository hosts a collection of plugins designed to extend and enhance the functionality of the awesome [https://bearblog.dev/](https://github.com/HermanMartinus/bearblog/).",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "node-fetch": "^3.3.2"
+  }
+}
