@@ -13,7 +13,7 @@ export const handler = async () => {
 
     const result = {
         artist: track.artist['#text'],
-        name: track.name,
+        title: track.name,
         url: track.url
     }
 
