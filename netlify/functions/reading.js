@@ -33,7 +33,8 @@ export const handler = async () => {
   );
 
   const data = await response.json();
-  const book = data.data.me[0].user_books[0].book;
+  const books = data.data.me[0].user_books;
+  const book = books[Math.floor(Math.random()*books.length)].book;
 
   const result = {
     title: book.title,
