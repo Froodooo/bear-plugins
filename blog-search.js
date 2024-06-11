@@ -1,3 +1,5 @@
+// LEGACY! USE bear/blog-search.js instead!
+
 // Select the main container and the blog posts list
 const mainContainer = document.querySelector("main");
 const blogPosts = document.querySelector(".blog-posts");
