@@ -9,5 +9,5 @@ if (document.querySelector("body").classList.contains("post")) {
 
   readingTimeElement.appendChild(readingTimeItalicElement);
 
-  document.querySelector("main").insertBefore(readingTimeElement, document.querySelector("main").childNodes[2]);
+  document.querySelector("main").insertBefore(readingTimeElement, document.querySelector("main").childNodes[3]);
 }
