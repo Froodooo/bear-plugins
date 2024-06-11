@@ -1,5 +1,5 @@
 if (document.querySelector(".blog-posts") && document.body.classList.contains("blog")) {
-  document.body.appendChild(
+  document.querySelector("main").insertBefore(
     Object.assign(
       document.createElement("input"), {
       type: "text",
@@ -11,6 +11,7 @@ if (document.querySelector(".blog-posts") && document.body.classList.contains("b
           post.style.display = post.textContent.toLowerCase().includes(event.target.value.toLowerCase()) ? "" : "none";
         })
       }
-    })
+    }),
+    document.querySelector(".blog-posts")
   );
 }
