@@ -5,7 +5,7 @@ if (document.querySelector("body").classList.contains("post")) {
   readingTimeElement.id = "reading-time";
 
   const readingTimeItalicElement = document.createElement("em");
-  readingTimeItalicElement.textContent = `Estimated reading time: ${readingTimeTime} minute${readingTimeTime > 1 ? "s" : ""}`;
+  readingTimeItalicElement.textContent = `Reading time: ${readingTimeTime} minute${readingTimeTime > 1 ? "s" : ""}`;
 
   readingTimeElement.appendChild(readingTimeItalicElement);
 
