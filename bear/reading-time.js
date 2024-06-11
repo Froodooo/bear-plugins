@@ -6,8 +6,8 @@ if (document.querySelector("body").classList.contains("post")) {
 
   const readingTimeItalicElement = document.createElement("em");
   readingTimeItalicElement.textContent = `Estimated reading time: ${readingTimeTime} minute${readingTimeTime > 1 ? "s" : ""}`;
-  
+
   readingTimeElement.appendChild(readingTimeItalicElement);
 
-  document.querySelector("main").insertBefore(readingTime, document.querySelector("main").childNodes[2]);
+  document.querySelector("main").insertBefore(readingTimeElement, document.querySelector("main").childNodes[2]);
 }
