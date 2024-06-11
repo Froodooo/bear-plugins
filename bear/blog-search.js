@@ -1,25 +1,16 @@
-// Select the main container and the blog posts list
-const mainContainer = document.querySelector("main");
-const blogPosts = document.querySelector(".blog-posts");
-
-// Only add the search input on the blog page
-if (blogPosts && document.body.classList.contains("blog")) {
-  const searchInput = document.createElement("input");
-  searchInput.type = "text";
-  searchInput.id = "searchInput";
-  searchInput.placeholder = "Search...";
-  searchInput.style.display = "block";
-
-  mainContainer.insertBefore(searchInput, blogPosts);
-
-  // Add event listener to filter posts based on input
-  searchInput.addEventListener("input", function () {
-    const searchTerm = this.value.toLowerCase();
-    const posts = document.querySelectorAll(".blog-posts li");
-
-    posts.forEach((post) => {
-      const title = post.textContent.toLowerCase();
-      post.style.display = title.includes(searchTerm) ? "" : "none";
-    });
-  });
+if (document.querySelector(".blog-posts") && document.body.classList.contains("blog")) {
+  document.body.appendChild(
+    Object.assign(
+      document.createElement("input"), {
+      type: "text",
+      id: "searchInput",
+      placeholder: "Search...",
+      style: "display: block;",
+      oninput: (event) => {
+        document.querySelectorAll(".blog-posts li").forEach((post) => {
+          post.style.display = post.textContent.toLowerCase().includes(event.target.value.toLowerCase()) ? "" : "none";
+        })
+      }
+    })
+  );
 }
