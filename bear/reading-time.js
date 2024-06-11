@@ -1,17 +1,13 @@
-const body = document.querySelector("body");
-
-if (body.classList.contains("post")) {
-  const mainContainer = document.querySelector("main");
-  const text = mainContainer.innerText;
-  const wpm = 225;
-  const words = text.trim().split(/\s+/).length;
-  const time = Math.ceil(words / wpm);
+if (document.querySelector("body").classList.contains("post")) {
+  const readingTimeTime = Math.ceil(document.querySelector("main").innerText.trim().split(/\s+/).length / 255);
   
-  const readingTime = document.createElement("p");
-  readingTime.id = "reading-time";
-  const italic = document.createElement("em");
-  italic.textContent = `Estimated reading time: ${time} minute${time > 1 ? "s" : ""}`;
-  readingTime.appendChild(italic);
+  const readingTimeElement = document.createElement("p");
+  readingTimeElement.id = "reading-time";
 
-  mainContainer.insertBefore(readingTime, mainContainer.childNodes[2]);
+  const readingTimeItalicElement = document.createElement("em");
+  readingTimeItalicElement.textContent = `Estimated reading time: ${readingTimeTime} minute${readingTimeTime > 1 ? "s" : ""}`;
+  
+  readingTimeElement.appendChild(readingTimeItalicElement);
+
+  document.querySelector("main").insertBefore(readingTime, document.querySelector("main").childNodes[2]);
 }
