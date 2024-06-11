@@ -23,6 +23,8 @@ Adds search capabilities to your `/blog/` page.
 <script src="https://cdn.statically.io/gh/froodooo/bear-plugins/main/bear/blog-search.js"></script>
 ```
 
+*Code credits for this one go to [Herman](https://github.com/HermanMartinus).*
+
 ### 2. Estimated reading time
 Adds estimated reading time to blog posts.
 
@@ -30,8 +32,6 @@ Adds estimated reading time to blog posts.
 ```html
 <script src="https://cdn.statically.io/gh/froodooo/bear-plugins/main/bear/reading-time.js"></script>
 ```
-
-*Code credits for this one go to [Herman](https://github.com/HermanMartinus).*
 
 ## License
 
