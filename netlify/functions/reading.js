@@ -14,7 +14,6 @@ export const handler = async () => {
             }
           }
         }
-        book_id
       }
     }
   }
