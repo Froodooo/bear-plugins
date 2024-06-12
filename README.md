@@ -36,3 +36,5 @@ Adds estimated reading time to blog posts.
 ## License
 
 This repository is licensed under the [WTFPL](http://www.wtfpl.net/) License.
+
+Do you enjoy using these plugins on your Bear blog? [Consider buying me a coffee](https://buymeacoffee.com/yordiverkroost).
