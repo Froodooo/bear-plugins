@@ -20,7 +20,7 @@ Adds search capabilities to your `/blog/` page.
 
 **Script**:
 ```html
-<script src="https://cdn.jsdelivr.net/gh/froodooo/bear-plugins@0.0.2/bear/blog-search.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/froodooo/bear-plugins@0.0.5/bear/blog-search.js"></script>
 ```
 
 *Code credits for this one go to [Herman](https://github.com/HermanMartinus).*
@@ -30,9 +30,11 @@ Adds estimated reading time to blog posts.
 
 **Script**:
 ```html
-<script src="https://cdn.jsdelivr.net/gh/froodooo/bear-plugins@0.0.2/bear/reading-time.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/froodooo/bear-plugins@0.0.5/bear/reading-time.js"></script>
 ```
 
 ## License
 
 This repository is licensed under the [WTFPL](http://www.wtfpl.net/) License.
+
+Do you enjoy using these plugins on your Bear blog? [Consider buying me a coffee](https://buymeacoffee.com/yordiverkroost).
