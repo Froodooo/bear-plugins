@@ -39,6 +39,8 @@ Adds contact information (email and social networks) to blog posts.
 Pass email- and social media information in the `data` attribute of the script tag, in the following format:
 `platform1::link1;platform2::link2` (be aware of the double colon `::`)
 
+When `email` is used as key, a `mailto:` is added automatically.
+
 See an example below.
 
 **Script**:
