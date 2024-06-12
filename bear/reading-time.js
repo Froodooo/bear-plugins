@@ -6,7 +6,8 @@ if (document.querySelector("body").classList.contains("post")) {
       document.body.appendChild(
         Object.assign(
           document.createElement("p"), {
-          innerHTML: `<em>Reading time: ${readingTime} minute${readingTime > 1 ? "s" : ""} </em>`
+          className: "reading-time",
+          innerHTML: `Reading time: ${readingTime} minute${readingTime > 1 ? "s" : ""}`
         })),
       document.querySelector("main").childNodes[4]);
 }
