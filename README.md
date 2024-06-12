@@ -47,7 +47,7 @@ See an example below.
 
 **Script**:
 ```html
-<script src="https://cdn.jsdelivr.net/gh/froodooo/bear-plugins@0.0.9/bear/post-scriptum.js" data="email::blog@yordi.me;Mastodon::https://social.lol/@yordi"></script>
+<script src="https://cdn.jsdelivr.net/gh/froodooo/bear-plugins@0.0.9/bear/post-scriptum.js" data-message="If you have any questions or comments, please contact me via" data-socials="email::blog@yordi.me;Mastodon::https://social.lol/@yordi"></script>
 ```
 
 ## License
