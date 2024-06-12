@@ -36,10 +36,12 @@ Adds estimated reading time to blog posts.
 ### 3. Blog post contact information (post-scriptum)
 Adds contact information (email and social networks) to blog posts.
 
-Pass email- and social media information in the `data` attribute of the script tag, in the following format:
+Pass email- and social media information in the `data-socials` attribute of the `<script>` tag, in the following format:
 `platform1::link1;platform2::link2` (be aware of the double colon `::`)
 
 When `email` is used as key, a `mailto:` is added automatically.
+
+A custom message can be provided via the `data-message` attribute of the `<script>` tag.
 
 See an example below.
 
