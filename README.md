@@ -36,16 +36,18 @@ Adds estimated reading time to blog posts.
 ### 3. Blog post contact information (post-scriptum)
 Adds contact information (email and social networks) to blog posts.
 
-Pass email- and social media information in the `data` attribute of the script tag, in the following format:
+Pass email- and social media information in the `data-socials` attribute of the `<script>` tag, in the following format:
 `platform1::link1;platform2::link2` (be aware of the double colon `::`)
 
 When `email` is used as key, a `mailto:` is added automatically.
+
+A custom message can be provided via the `data-message` attribute of the `<script>` tag.
 
 See an example below.
 
 **Script**:
 ```html
-<script src="https://cdn.jsdelivr.net/gh/froodooo/bear-plugins@0.0.9/bear/post-scriptum.js" data="email::blog@yordi.me;Mastodon::https://social.lol/@yordi"></script>
+<script src="https://cdn.jsdelivr.net/gh/froodooo/bear-plugins@0.0.9/bear/post-scriptum.js" data-message="If you have any questions or comments, please contact me via" data-socials="email::blog@yordi.me;Mastodon::https://social.lol/@yordi"></script>
 ```
 
 ## License
