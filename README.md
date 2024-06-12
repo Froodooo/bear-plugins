@@ -33,6 +33,19 @@ Adds estimated reading time to blog posts.
 <script src="https://cdn.jsdelivr.net/gh/froodooo/bear-plugins@0.0.5/bear/reading-time.js"></script>
 ```
 
+### 3. Blog post contact information
+Adds contact information (email and social networks) to blog posts.
+
+Pass email- and social media information in the `data` attribute of the script tag, in the following format:
+`platform1::link1;platform2::link2` (be aware of the double colon `::`)
+
+See an example below.
+
+**Script**:
+```html
+<script src="https://cdn.jsdelivr.net/gh/froodooo/bear-plugins@0.0.9/bear/reading-time.js" data="email::blog@yordi.me;Mastodon::https://social.lol/@yordi"></script>
+```
+
 ## License
 
 This repository is licensed under the [WTFPL](http://www.wtfpl.net/) License.
