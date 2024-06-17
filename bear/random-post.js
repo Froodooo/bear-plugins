@@ -1,4 +1,4 @@
-fetch(document.currentScript.getAttribute('data-blog')
+fetch(document.currentScript.getAttribute('data-blog'))
   .then(res => res.text())
   .then((html) => new DOMParser().parseFromString(html, 'text/html').querySelector(".blog-posts").children)
   .then((blogPosts) => blogPosts[Math.floor(Math.random() * blogPosts.length)])
