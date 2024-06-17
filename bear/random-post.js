@@ -1,5 +1,5 @@
 const allBlogPosts = new DOMParser()
-  .parseFromString((await(await fetch(document.currentScript.getAttribute("data-blog"))).text()), 'text/html').querySelector(".blog-posts").children;
+  .parseFromString(await(await fetch(document.currentScript.getAttribute("data-blog"))).text(), 'text/html').querySelector(".blog-posts").children;
 
 const randomBlogPost = allBlogPosts[Math.floor(Math.random() * allBlogPosts.length)];
 
