@@ -63,7 +63,7 @@ Pass the url to your blog page in the `data-blog` attribute of the `<script>` ta
 
 **Script**:
 ```html
-<script src="https://cdn.jsdelivr.net/gh/froodooo/bear-plugins@0.0.16/bear/random-post.js" data-blog="https://yordi.me/blog"></script>
+<script src="https://cdn.jsdelivr.net/gh/froodooo/bear-plugins@0.0.17/bear/random-post.js" data-blog="https://yordi.me/blog"></script>
 ```
 
 ## License
