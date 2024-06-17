@@ -1,7 +1,8 @@
-const allBlogPosts = new DOMParser()
-  .parseFromString(await(await fetch(document.currentScript.getAttribute("data-blog"))).text(), 'text/html').querySelector(".blog-posts").children;
-
-const randomBlogPost = allBlogPosts[Math.floor(Math.random() * allBlogPosts.length)];
-
-document.querySelector('#random-post').innerHTML = `Random post: <a href='${randomBlogPost.children[1].href}'>${randomBlogPost.children[1].text}</a>`;
-document.querySelector('#random-post').classList.remove("blurred");
+fetch(document.currentScript.getAttribute('data-blog')
+  .then(res => res.text())
+  .then((html) => new DOMParser().parseFromString(html, 'text/html').querySelector(".blog-posts").children)
+  .then((blogPosts) => blogPosts[Math.floor(Math.random() * blogPosts.length)])
+  .then((randomBlogPost) => {
+    document.querySelector('#random-post').innerHTML = `Random post: <a href='${randomBlogPost.children[1].href}'>${randomBlogPost.children[1].text}</a>`;
+    document.querySelector('#random-post').classList.remove("blurred");
+  });
