@@ -30,7 +30,7 @@ Adds estimated reading time to blog posts.
 
 **Script**:
 ```html
-<script src="https://cdn.jsdelivr.net/gh/froodooo/bear-plugins@0.0.5/bear/reading-time.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/froodooo/bear-plugins@0.0.11/bear/reading-time.js"></script>
 ```
 
 ### 3. Blog post contact information (post-scriptum)
