@@ -50,6 +50,22 @@ See an example below.
 <script src="https://cdn.jsdelivr.net/gh/froodooo/bear-plugins@0.0.9/bear/post-scriptum.js" data-message="If you have any questions or comments, please contact me via" data-socials="email::blog@yordi.me;Mastodon::https://social.lol/@yordi"></script>
 ```
 
+### 4. Random blog post
+Adds a link to a random post from your blog.
+
+Add a `<span>` placeholder somewhere on your page, where you want the link to the random blog post to appear. See an example below:
+
+```html
+<span id="random-post" class="blurred">Random post: the post will show here when it's loaded.</span>
+```
+
+Pass the url to your blog page in the `data-blog` attribute of the `<script>` tag. See an example below.
+
+**Script**:
+```html
+<script src="https://cdn.jsdelivr.net/gh/froodooo/bear-plugins@0.0.16/bear/random-post.js" data-blog="https://yordi.me/blog"></script>
+```
+
 ## License
 
 This repository is licensed under the [WTFPL](http://www.wtfpl.net/) License.
