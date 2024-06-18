@@ -53,17 +53,25 @@ See an example below.
 ### 4. Random blog post
 Adds a link to a random post from your blog.
 
+Add the following code to load all posts on the page, without showing them:
+
+```html
+<div id="random-post-all" style="display: none;">
+  {{ posts }}
+</div>
+```
+
 Add a `<span>` placeholder somewhere on your page, where you want the link to the random blog post to appear. See an example below:
 
 ```html
 <span id="random-post" class="blurred">Random post: the post will show here when it's loaded.</span>
 ```
 
-Pass the url to your blog page in the `data-blog` attribute of the `<script>` tag. See an example below.
+Add the following script to the footer directive:
 
 **Script**:
 ```html
-<script src="https://cdn.jsdelivr.net/gh/froodooo/bear-plugins@0.0.17/bear/random-post.js" data-blog="https://yordi.me/blog"></script>
+<script src="https://cdn.jsdelivr.net/gh/froodooo/bear-plugins@0.0.18/bear/random-post.js"></script>
 ```
 
 ## License
