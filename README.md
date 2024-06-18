@@ -67,11 +67,15 @@ Add a `<span>` placeholder somewhere on your page, where you want the link to th
 <span id="random-post" class="blurred">Random post: the post will show here when it's loaded.</span>
 ```
 
-Add the following script to the footer directive:
+Add the following script to the footer directive. Two possible configuration options that can be added as attributes to the script:
+- `data-prefix`: If set, this text is printed before the random blog post link.
+- `data-text`: If set, this text is printed as the link text.
+
+See an example below:
 
 **Script**:
 ```html
-<script src="https://cdn.jsdelivr.net/gh/froodooo/bear-plugins@0.0.18/bear/random-post.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/froodooo/bear-plugins@0.0.18/bear/random-post.js" data-prefix="Random post :"></script>
 ```
 
 ## License
