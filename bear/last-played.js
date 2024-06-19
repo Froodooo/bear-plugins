@@ -3,7 +3,7 @@ if (document.querySelector("body").classList.contains("home")) {
     .then(res => res.json())
     .then((track) => {
       document.querySelector('#last-played')
-        .innerHTML = `Last played: <a href='${track.url}' target='_blank'>${track.title} (${track.artist})</a>`;
+        .innerHTML = `${document.currentScript.getAttribute("data-prefix")}<a href='${track.url}' target='_blank'>${track.title} (${track.artist})</a>`;
       document.querySelector('#last-played')
         .classList.remove("blurred");
     });
