@@ -32,7 +32,7 @@ A custom placement of the reading time can be set via the `data-before-child` at
 
 **Script**:
 ```html
-<script src="https://cdn.jsdelivr.net/gh/froodooo/bear-plugins@0.0.11/bear/reading-time.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/froodooo/bear-plugins@0.0.25/bear/reading-time.js"></script>
 ```
 
 ### 3. Blog post contact information (post-scriptum)
