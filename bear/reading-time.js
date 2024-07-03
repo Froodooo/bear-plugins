@@ -9,5 +9,5 @@ if (document.querySelector("body").classList.contains("post")) {
           className: "reading-time",
           innerHTML: `Reading time: ${readingTime} minute${readingTime > 1 ? "s" : ""}`
         })),
-      document.querySelector("main").childNodes[parseInt(document.currentScript.getAttribute("data-before-child")) ?? 4]);
+      document.querySelector("main").childNodes[parseInt(document.currentScript.getAttribute("data-before-child") ?? 4)]);
 }
