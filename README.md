@@ -28,9 +28,11 @@ Adds search capabilities to your `/blog/` page.
 ### 2. Estimated reading time
 Adds estimated reading time to blog posts.
 
+A custom placement of the reading time can be set via the `data-before-child` attribute of the `<script>` tag, using a number as the value. The default placement is below the blog post date (index position 4).
+
 **Script**:
 ```html
-<script src="https://cdn.jsdelivr.net/gh/froodooo/bear-plugins@0.0.11/bear/reading-time.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/froodooo/bear-plugins@0.0.25/bear/reading-time.js"></script>
 ```
 
 ### 3. Blog post contact information (post-scriptum)
