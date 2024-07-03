@@ -1,5 +1,5 @@
 if (document.querySelector("body").classList.contains("post")) {
-  const readingTime = Math.ceil(document.querySelector("main").innerText.trim().split(/\s+/).length / 255);
+  const readingTime = Math.ceil(document.querySelector("main").innerText.trim().split(/\s+/).length / parseInt(document.currentScript.getAttribute("data-wpm") ?? 255));
   document
     .querySelector("main")
     .insertBefore(
