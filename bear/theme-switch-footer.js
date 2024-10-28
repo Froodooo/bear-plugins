@@ -1,3 +1,4 @@
+const preferredScheme = localStorage.getItem("color-scheme");
 document.querySelector("#preferlight").style.display = preferredScheme === "light" ? "none" : "";
 document.querySelector("#preferdark").style.display = preferredScheme === "light" ? "" : "none";
 
