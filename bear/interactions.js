@@ -5,7 +5,7 @@ if (document.querySelector("body").classList.contains("post")) {
         return child.content?.text;
       case "like-of":
         return "liked this";
-      case "respost-of":
+      case "repost-of":
         return "reposted this";
       default:
         return "interacted with this post in an unknown way";
