@@ -12,13 +12,13 @@ if (document.querySelector("body").classList.contains("post")) {
     }
   }
 
-  async function fetchInteractions() {
+  async function fetchInteractions(headerTitle) {
     const response = await fetch("https://webmention.io/api/mentions.jf2?target=" + document.URL);
     const data = await response.json();
     if (data && data.children.length > 0) {
 
       const interactions = document.createElement("div");
-      interactions.innerHTML = `<h3>${document.currentScript.getAttribute("data-interactions") ?? "Interactions"}</h3>`;
+      interactions.innerHTML = `<h3>${headerTitle ?? "Interactions"}</h3>`;
 
       for (const child of data.children) {
         const interaction = document.createElement("div");
@@ -43,5 +43,5 @@ if (document.querySelector("body").classList.contains("post")) {
     }
   }
 
-  fetchInteractions();
+  fetchInteractions(document.currentScript.getAttribute("data-interactions"));
 }
