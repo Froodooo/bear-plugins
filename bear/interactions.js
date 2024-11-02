@@ -18,7 +18,7 @@ if (document.querySelector("body").classList.contains("post")) {
     if (data && data.children.length > 0) {
 
       const interactions = document.createElement("div");
-      interactions.innerHTML = "<h3>Interactions</h3>";
+      interactions.innerHTML = `<h3>${document.currentScript.getAttribute("data-interactions") ?? "Interactions"}</h3>`;
 
       for (const child of data.children) {
         const interaction = document.createElement("div");
