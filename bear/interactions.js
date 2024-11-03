@@ -18,6 +18,7 @@ if (document.querySelector("body").classList.contains("post")) {
     if (data && data.children.length > 0) {
 
       const interactions = document.createElement("div");
+      interactions.id = "interactions";
       interactions.innerHTML = `<h3>${headerTitle ?? "Interactions"}</h3>`;
 
       for (const child of data.children) {
