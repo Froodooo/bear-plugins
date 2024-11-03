@@ -80,6 +80,19 @@ See an example below:
 <script src="https://cdn.jsdelivr.net/gh/froodooo/bear-plugins@0.0.18/bear/random-post.js" data-prefix="Random post :"></script>
 ```
 
+### 5. Interactions
+Shows Webmention-interactions below a blog post.
+
+Add the following script to the footer directive. A possible configuration option that can be added as attribute to the script:
+- `data-interactions`: If set, this text is used as the header above all interactions.
+
+See an example below:
+
+**Script**:
+```html
+<script src="https://cdn.jsdelivr.net/gh/froodooo/bear-plugins@0.0.35/bear/interactions.js" data-interactions="Interactions for this post"></script>
+```
+
 ## License
 
 This repository is licensed under the [WTFPL](http://www.wtfpl.net/) License.
