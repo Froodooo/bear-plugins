@@ -33,19 +33,21 @@ export const handler = async () => {
 
   const data = await response.json();
   const books = data.data.me[0].user_books;
-  // const book = books[Math.floor(Math.random()*books.length)].book;
+  const book = books[Math.floor(Math.random()*books.length)].book;
 
-  const result = books.map(book => ({
-    title: book.book.title,
-    slug: book.book.slug,
-    author: book.contributions.map(contribution => contribution.author.name).join(", ")
-  }));
+  const result = books.map(book => {
+    return {
+      title: book.book.title,
+      slug: book.book.slug,
+      author: book.book.contributions.map(contribution => contribution.author.name).join(", ")
+    }
+  });
 
-//   const result = {
-//     title: book.title,
-//     slug: book.slug,
-//     author: book.contributions.map(c => c.author.name).join(", ")
-// }
+  //   const result = {
+  //     title: book.title,
+  //     slug: book.slug,
+  //     author: book.contributions.map(c => c.author.name).join(", ")
+  // }
 
   return {
     statusCode: 200,
