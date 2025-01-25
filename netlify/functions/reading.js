@@ -25,10 +25,12 @@ export const handler = async () => {
     "https://api.hardcover.app/v1/graphql",
     {
       method: "POST",
-      headers: { "authorization": `Bearer ${process.env.HARDCOVER_TOKEN}` },
+      headers: { 
+        "Authorization": `Bearer ${process.env.HARDCOVER_TOKEN}`,
+        "Content-Type": "application/json"
+      },
       body: JSON.stringify({
         query: operationsDoc,
-        variables: {},
         operationName: "MyQuery"
       })
     }
@@ -45,6 +47,8 @@ export const handler = async () => {
       image: book.book.image.url
     }
   });
+
+  console.log(result);
 
   return {
     statusCode: 200,
