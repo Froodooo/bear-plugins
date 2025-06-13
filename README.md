@@ -25,7 +25,15 @@ Adds search capabilities to your `/blog/` page.
 
 *Code credits for this one go to [Herman](https://github.com/HermanMartinus).*
 
-### 2. Estimated reading time
+### 2. Blog posts by month
+Reorders all posts on the default blog posts page by month and year.
+
+**Script**:
+```html
+<script src="https://cdn.jsdelivr.net/gh/froodooo/bear-plugins@0.0.44/bear/blog-posts.js"></script>
+```
+
+### 3. Estimated reading time
 Adds estimated reading time to blog posts.
 
 A custom placement of the reading time can be set via the `data-before-child` attribute of the `<script>` tag, using a number as the value. The default placement is below the blog post date (index position 4).
@@ -35,7 +43,7 @@ A custom placement of the reading time can be set via the `data-before-child` at
 <script src="https://cdn.jsdelivr.net/gh/froodooo/bear-plugins@0.0.26/bear/reading-time.js"></script>
 ```
 
-### 3. Blog post contact information (post-scriptum)
+### 4. Blog post contact information (post-scriptum)
 Adds contact information (email and social networks) to blog posts.
 
 Pass email- and social media information in the `data-socials` attribute of the `<script>` tag, in the following format:
@@ -52,7 +60,7 @@ See an example below.
 <script src="https://cdn.jsdelivr.net/gh/froodooo/bear-plugins@0.0.9/bear/post-scriptum.js" data-message="If you have any questions or comments, please contact me via" data-socials="email::blog@yordi.me;Mastodon::https://social.lol/@yordi"></script>
 ```
 
-### 4. Random blog post
+### 5. Random blog post
 Adds a link to a random post from your blog.
 
 Add the following code to load all posts on the page, without showing them:
@@ -80,7 +88,7 @@ See an example below:
 <script src="https://cdn.jsdelivr.net/gh/froodooo/bear-plugins@0.0.18/bear/random-post.js" data-prefix="Random post :"></script>
 ```
 
-### 5. Interactions
+### 6. Interactions
 Shows Webmention-interactions below a blog post.
 
 Add the following script to the footer directive. A possible configuration option that can be added as attribute to the script:
