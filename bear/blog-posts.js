@@ -53,4 +53,6 @@ function organizeBlogPosts() {
 }
 
 // Run the organization when the DOM is loaded
-document.addEventListener('DOMContentLoaded', organizeBlogPosts); 
+if (document.querySelector(".blog-posts") && document.body.classList.contains("blog")) {
+    document.addEventListener('DOMContentLoaded', organizeBlogPosts); 
+}
